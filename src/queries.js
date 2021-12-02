@@ -33,3 +33,15 @@ function apCodeQuery(city) {
   )
 }
 //query to get airport code from city
+function seatQuery1(id) {
+  return (`SELECT ticket_no, fare_conditions, amount
+    FROM dbs025.ticket_flights
+    WHERE flight_id = '${id};'`
+  )
+}
+
+function seatQuery2(id, number) {
+  return (`SELECT seat_no
+    FROM dbs025.ticket_flights
+    WHERE flight_id = '${id}' AND ticket_no = '${number}`)
+}
