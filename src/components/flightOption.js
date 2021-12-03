@@ -7,8 +7,8 @@ class FlightOption extends Component {
     this.state = {
       flightID: this.props.flightID,
       departCode: this.props.departCode,
-      arriveCode: this.props.departTime,
-      departTime: this.props.arriveCode,
+      arriveCode: this.props.arriveCode,
+      departTime: this.props.departTime,
       arriveTime: this.props.arriveTime,
     }
   }
